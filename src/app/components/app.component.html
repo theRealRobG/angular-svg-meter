@@ -1,5 +1,8 @@
 <main>
     <div class="widget-container">
+        <div id="val" class="value-indicator">{{svgVal}}</div>
+        <div id="min" class="value-indicator">{{svgMin}}</div>
+        <div id="max" class="value-indicator">{{svgMax}}</div>
         <svg-meter [max]="svgMax" [min]="svgMin" [val]="svgVal"></svg-meter>
         <error-message [lastGoodDate]="lastGoodData" *ngIf="isError"></error-message>
     </div>

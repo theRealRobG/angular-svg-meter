@@ -11,3 +11,22 @@ main {
     height: 250px;
     margin: auto;
 }
+.value-indicator {
+    position: absolute;
+    z-index: 1;
+}
+#val {
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: -25px;
+}
+#min {
+    left: 0;
+    bottom: -25px;
+}
+#max {
+    right: 0;
+    bottom: -25px;
+}
