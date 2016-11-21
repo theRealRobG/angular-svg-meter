@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './components/app.component';
 import { SvgMeterComponent, ErrorMessageComponent } from './components';
+import { SvgDataFormatPipe } from './pipes';
 import { SvgMeterService } from './services';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SvgMeterService } from './services';
     declarations: [
         AppComponent,
         SvgMeterComponent,
-        ErrorMessageComponent
+        ErrorMessageComponent,
+        SvgDataFormatPipe
     ],
     providers: [SvgMeterService],
     bootstrap: [AppComponent]

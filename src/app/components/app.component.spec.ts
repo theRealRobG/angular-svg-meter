@@ -3,6 +3,7 @@ import { By } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ErrorMessageComponent, SvgMeterComponent } from '.';
+import { SvgDataFormatPipe } from '../pipes';
 import { SvgMeterService, SvgData } from '../services';
 
 let appFixture: ComponentFixture<AppComponent>;
@@ -32,7 +33,8 @@ describe('App', () => {
                 declarations: [
                     AppComponent,
                     ErrorMessageComponent,
-                    SvgMeterComponent
+                    SvgMeterComponent,
+                    SvgDataFormatPipe
                 ],
                 providers: [{ provide: SvgMeterService, useClass: MockGoodSvgDataService }]
             });
@@ -98,7 +100,8 @@ describe('App', () => {
                 declarations: [
                     AppComponent,
                     ErrorMessageComponent,
-                    SvgMeterComponent
+                    SvgMeterComponent,
+                    SvgDataFormatPipe
                 ],
                 providers: [{ provide: SvgMeterService, useClass: MockBadSvgDataService }]
             });

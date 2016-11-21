@@ -12,6 +12,8 @@ export class AppComponent implements OnDestroy {
     public svgMax: number;
     public svgMin: number;
     public svgVal: number;
+    public dataFormat?: string;
+    public dataUnit?: string;
     public isError = false;
     public lastGoodData: Date;
     public queryIntervalInMilliSeconds = 10000;
@@ -46,6 +48,8 @@ export class AppComponent implements OnDestroy {
         this.svgMax = svgData.max;
         this.svgMin = svgData.min;
         this.svgVal = svgData.value;
+        this.dataFormat = svgData.format;
+        this.dataUnit = svgData.unit;
     }
 
     public handleBadData(): void {

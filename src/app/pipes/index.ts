@@ -1,0 +1,1 @@
+export * from './svg-data-format/svg-data-format.pipe';
