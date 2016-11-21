@@ -1,0 +1,35 @@
+.meter-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+}
+.meter {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+svg {
+    width: 100%;
+    height: 100%;
+}
+svg line {
+    stroke: rgb(0,0,0);
+    stroke-width: 2;
+}
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;
+}
+.green {
+    background-color: green;
+}

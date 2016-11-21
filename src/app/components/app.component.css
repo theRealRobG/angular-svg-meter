@@ -1,0 +1,13 @@
+main {
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+.widget-container {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+}

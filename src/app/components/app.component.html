@@ -1,0 +1,6 @@
+<main>
+    <div class="widget-container">
+        <svg-meter [max]="svgMax" [min]="svgMin" [val]="svgVal"></svg-meter>
+        <error-message [lastGoodDate]="lastGoodData" *ngIf="isError"></error-message>
+    </div>
+</main>

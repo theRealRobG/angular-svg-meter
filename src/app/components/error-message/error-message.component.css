@@ -1,0 +1,15 @@
+.error-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 20%;
+    height: 60%;
+    width: 80%;
+    color: red;
+    text-align: center;
+    box-sizing: border-box;
+    border: 5px solid red;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
